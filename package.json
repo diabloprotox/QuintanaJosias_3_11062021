@@ -1,0 +1,20 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diabloprotox/QuintanaJosias_3_11062021.git"
+  },
+  "author": "QuintanaJosias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diabloprotox/QuintanaJosias_3_11062021/issues"
+  },
+  "homepage": "https://github.com/diabloprotox/QuintanaJosias_3_11062021#readme"
+}
