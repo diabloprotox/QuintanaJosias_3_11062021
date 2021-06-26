@@ -1,5 +1,6 @@
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -11,17 +12,19 @@
 </head>
 <body>
     <div class="container">
-        <!--Section Header-->
+        <!-------- Header------>
         <header>
             <img id="logo" src="/images/logo/ohmyfood@2x.svg" alt="ohmyfoodlogo">
         </header>
+        <!-----Section Top------>
         <div class="top">
-            <div>
-                <i class="fas fa-map-marker-alt"></i><input type="text" id="ville" value="Paris, Belleville">
+            <div class="top_search">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" id="ville" value="Paris, Belleville">
             </div>
-            <h1>Reservez le menu qui vous convient</h1>
+            <h1>Réservez le menu qui vous convient</h1>
             <h4>Découvrez des restaurants d'exception, séléctionnés par nos soins</h3>
-            <button id="btn btn__explorer">Explorer nos restaurants</button>
+            <button class="btn btn_explorer">Explorer nos restaurants</button>
         </div>
         
         <!--Section Menu-->
@@ -39,6 +42,7 @@
                     <div class="restocard__description">
                         <h3>La palette du goût</h3>
                         <h4>Ménilmontant</h4>
+                        <span>♥</span>
                     </div>
                 </div>
                 <div class="restocard">
