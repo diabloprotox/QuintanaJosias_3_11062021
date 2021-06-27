@@ -34,6 +34,38 @@ header {
   justify-content: center;
 }
 
+#footer {
+  background-color: #424242;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 19px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+#footer li {
+  list-style: none;
+  padding: 5px;
+}
+#footer li i {
+  padding-right: 10px;
+  font-size: 15px;
+}
+#footer li a {
+  text-decoration: none;
+  color: white;
+}
+#footer li:nth-child(1) i {
+  padding-right: 13px;
+}
+#footer li:nth-child(2) i {
+  font-size: 12px;
+}
+
 .top {
   display: flex;
   flex-direction: column;

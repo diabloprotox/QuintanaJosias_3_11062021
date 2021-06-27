@@ -1,0 +1,35 @@
+#footer{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    h3{
+        font-family: 'Shrikhand', cursive;
+        font-size: 19px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+    li{
+        list-style: none;
+        padding: 5px;
+        i{
+            padding-right: 10px;
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }      
+    }
+    li:nth-child(1){
+        i{
+            padding-right: 13px;
+        }
+    }
+    li:nth-child(2){
+        i{
+            font-size: 12px;
+        }
+    }
+}
