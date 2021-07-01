@@ -1,18 +1,54 @@
 .btn{
+    border: 1px solid transparent;
+    cursor: pointer;
     &_explorer{
         width: 240px;
-        margin-bottom: 50px;
-        border: 1px solid transparent;
+        margin-bottom: 50px;        
         border-radius: 30px;
         background-color: $color-secondary;
+        background: radial-gradient(circle, rgba(255,121,218,1) 0%, rgba(193,86,163,1) 100%);
         padding: 15px;
         color: white;
         font-size: large;
         box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.15);
         &:hover{
-            cursor: pointer;
             opacity: 0.9;
             box-shadow:  3px 5px 5px 0px rgba(0, 0, 0, 0.30);
+        }
+    }
+    &_fonction{
+        background-color: $back-gris;
+        padding: 20px 20px 20px 0;
+        margin: 10px;
+        border-radius: 20px;
+        font-size: medium;
+        font-weight: 600;
+        width: 320px;
+        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.10);     
+        
+        span{
+            padding: 5px 10px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            font-size: small;
+            color: white;
+            margin-right: 10px;
+            position: relative;
+            left: -20px;        
+        }
+        i{
+            color: gray;
+            padding-right: 30px;
+            font-size: 17px;
+            
+        }
+        &:hover{
+            background-color: #9356dc21;
+            box-shadow:  3px 5px 5px 0px rgba(0, 0, 0, 0.30);
+            i{
+                color: $color-primary;
+            }
+            
         }
     }
 }

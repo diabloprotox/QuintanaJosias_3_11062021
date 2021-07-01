@@ -8,21 +8,56 @@ body {
   padding: 0;
 }
 
+.btn {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
 .btn_explorer {
   width: 240px;
   margin-bottom: 50px;
-  border: 1px solid transparent;
   border-radius: 30px;
   background-color: #FF79DA;
+  background: radial-gradient(circle, #ff79da 0%, #c156a3 100%);
   padding: 15px;
   color: white;
   font-size: large;
   box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.15);
 }
 .btn_explorer:hover {
-  cursor: pointer;
   opacity: 0.9;
   box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.btn_fonction {
+  background-color: #f2f2f2;
+  padding: 20px 20px 20px 0;
+  margin: 10px;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 600;
+  width: 320px;
+  box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.btn_fonction span {
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  font-size: small;
+  color: white;
+  margin-right: 10px;
+  position: relative;
+  left: -20px;
+}
+.btn_fonction i {
+  color: gray;
+  padding-right: 30px;
+  font-size: 17px;
+}
+.btn_fonction:hover {
+  background-color: #9356dc21;
+  box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.btn_fonction:hover i {
+  color: #9356DC;
 }
 
 #cards {
@@ -155,6 +190,13 @@ header {
   font-weight: 100;
   opacity: 50%;
   margin: 5px 0 30px 0;
+}
+
+#fonction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 #restaurants {
