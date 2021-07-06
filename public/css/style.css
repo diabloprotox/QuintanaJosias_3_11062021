@@ -29,12 +29,13 @@ body {
 }
 .btn_fonction {
   background-color: #f2f2f2;
-  padding: 20px 20px 20px 0;
+  padding: 20px 20px 20px 10px;
   margin: 10px;
   border-radius: 20px;
   font-size: medium;
   font-weight: 600;
   width: 320px;
+  text-align: left;
   box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .btn_fonction span {
@@ -85,25 +86,40 @@ body {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restocard__description h3 {
+.restocard__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restocard__description .cardtext h3 {
   margin: 15px 0 5px 15px;
 }
-.restocard__description h4 {
+.restocard__description .cardtext h4 {
   font-weight: 100;
   margin: 0 0 20px 15px;
 }
-.restocard span {
+.restocard__description .coeur {
+  display: flex;
+}
+.restocard__description .coeur span {
   background-color: #99E2D0;
-  padding: 10px 5px 0 5px;
-  width: 25%;
-  height: 30px;
+  padding: 8px;
   color: green;
-  position: relative;
-  bottom: 215px;
-  left: 70%;
   border-radius: 2px;
-  font-size: 1em;
   font-weight: 600;
+  position: relative;
+  bottom: 150px;
+  left: 45px;
+}
+.restocard__description .coeur svg {
+  margin-right: 20px;
+}
+.restocard__description .coeur #svg_1 {
+  fill-opacity: 0;
+}
+.restocard__description .coeur #svg_1:hover {
+  fill-opacity: 1;
+  stroke: none;
 }
 .restocard:hover {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
@@ -165,7 +181,7 @@ header {
 .top_search {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  width: 100%;
+  width: calc(100% - 30px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,12 +199,16 @@ header {
 .top_search i {
   font-size: 17px;
 }
-.top h1 {
+.top_text {
+  text-align: center;
+  margin: 5px 15px 5px 15px;
+}
+.top_text h1 {
   margin: 30px 0 5px 0;
 }
-.top h4 {
+.top_text h4 {
   font-weight: 100;
-  opacity: 50%;
+  font-size: large;
   margin: 5px 0 30px 0;
 }
 

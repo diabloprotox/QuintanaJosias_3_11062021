@@ -23,29 +23,44 @@
         border-top-right-radius: 15px;
     }
     &__description{
-        h3{
-            margin: 15px 0 5px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cardtext{
+            h3{
+                margin: 15px 0 5px 15px;
+            }
+            h4{
+                font-weight: 100;
+                margin: 0 0 20px 15px;
+            }
         }
-        h4{
-            font-weight: 100;
-            margin: 0 0 20px 15px;
-        }
+        .coeur{ 
+            display: flex;
+            span{
+            background-color: $color-tertiaire;
+            padding: 8px;
+            color: green;           
+            border-radius: 2px;
+            font-weight: 600;
+            position: relative;
+            bottom: 150px;
+            left: 45px;            
+            }
+            svg{
+                margin-right: 20px;
+            }
+            #svg_1{
+            fill-opacity: 0;
+                &:hover{
+                    fill-opacity: 1;
+                    stroke: none;
+                }
+            }
+        }        
     }
-    span{
-        background-color: $color-tertiaire;
-        padding: 10px 5px 0 5px;
-        width: 25%;
-        height: 30px;
-        color: green;
-        position: relative;
-        bottom: 215px;
-        left: 70%;
-        border-radius: 2px;
-        font-size: 1em;
-        font-weight: 600;
-        
-    }
+    
     &:hover{
         box-shadow:  3px 5px 5px rgb(0 0 0 / 30%);
-    }
+    }    
 }

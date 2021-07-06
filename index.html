@@ -23,8 +23,10 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="text" id="ville" value="Paris, Belleville">
             </div>
-            <h1>Réservez le menu qui vous convient</h1>
-            <h4>Découvrez des restaurants d'exception, séléctionnés par nos soins</h3>
+            <div class="top_text">
+                <h1>Réservez le menu qui vous convient</h1>
+                <h4>Découvrez des restaurants d'exception, séléctionnés par nos soins</h4>
+                </div>
             <button class="btn btn_explorer">Explorer nos restaurants</button>
         </div>
         
@@ -43,28 +45,84 @@
                     <div class="restocard">
                         <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                         <div class="restocard__description">
-                            <h3>La palette du goût</h3>
-                            <h4>Ménilmontant</h4>
-                        </div>
-                        <span>Nouveau</span>
+                            <div class="cardtext">
+                                <h3>La palette du goût</h3>
+                                <h4>Ménilmontant</h4>
+                            </div>
+                            <div class="coeur">
+                                <span>Nouveau</span>
+                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+                                    <defs style="vector-effect: non-scaling-stroke;" stroke="null">
+                                        <linearGradient spreadMethod="pad" y2="0.15625" x2="0.70703" y1="0.96484" x1="0.03906" id="gradbox_fill">
+                                            <stop stop-opacity="0.99219" offset="0" stop-color="#d85fb6" />
+                                            <stop offset="1" stop-opacity="0.99609" stop-color="#55337f" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g stroke="null">
+                                        <title stroke="null">Layer 1</title>
+                                        <path stroke="#000000" id="svg_1"
+                                            d="m17.65923,10.36524c6.56521,-18.0581 32.28792,0 0,23.21756c-32.28792,-23.21756 -6.56521,-41.27566 0,-23.21756z"
+                                            fill="url(#gradbox_fill)" />
+                                    </g>
+                                </svg>
+                            </div>                                
+                        </div>                                            
                     </div>
                 </a>
                 <a href="">
                     <div class="restocard">
                         <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
                         <div class="restocard__description">
-                            <h3>La note enchantée</h3>
-                            <h4>Charonne</h4>
+                            <div class="cardtext">
+                                <h3>La note enchantée</h3>
+                                <h4>Charonne</h4>
+                            </div>
+                            <div class="coeur">
+                                <span>Nouveau</span>                        
+                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+                                    <defs style="vector-effect: non-scaling-stroke;" stroke="null">
+                                        <linearGradient spreadMethod="pad" y2="0.15625" x2="0.70703" y1="0.96484" x1="0.03906" id="gradbox_fill">
+                                            <stop stop-opacity="0.99219" offset="0" stop-color="#d85fb6" />
+                                            <stop offset="1" stop-opacity="0.99609" stop-color="#55337f" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g stroke="null">
+                                        <title stroke="null">Layer 1</title>
+                                        <path                                                                        
+                                            stroke="#000000" id="svg_1"
+                                            d="m17.65923,10.36524c6.56521,-18.0581 32.28792,0 0,23.21756c-32.28792,-23.21756 -6.56521,-41.27566 0,-23.21756z"
+                                            fill="url(#gradbox_fill)"/>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
-                        <span>Nouveau</span>
                     </div>
                 </a>
                 <a href="">
                     <div class="restocard">
                         <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                         <div class="restocard__description">
-                            <h3>À la française</h3>
-                            <h4>Cité Rouge</h4>
+                            <div class="cardtext">
+                                <h3>À la française</h3>
+                                <h4>Cité Rouge</h4>
+                            </div>
+                            <div class="coeur">
+                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;"
+                                    stroke="null">
+                                    <defs style="vector-effect: non-scaling-stroke;" stroke="null">
+                                        <linearGradient spreadMethod="pad" y2="0.15625" x2="0.70703" y1="0.96484" x1="0.03906" id="gradbox_fill">
+                                            <stop stop-opacity="0.99219" offset="0" stop-color="#d85fb6" />
+                                            <stop offset="1" stop-opacity="0.99609" stop-color="#55337f" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g stroke="null">
+                                        <title stroke="null">Layer 1</title>
+                                        <path stroke="#000000" id="svg_1"
+                                            d="m17.65923,10.36524c6.56521,-18.0581 32.28792,0 0,23.21756c-32.28792,-23.21756 -6.56521,-41.27566 0,-23.21756z"
+                                            fill="url(#gradbox_fill)" />
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -72,8 +130,27 @@
                     <div class="restocard">
                         <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                         <div class="restocard__description">
-                            <h3>Les délices des sens</h3>
-                            <h4>Folie-Méricourt</h4>
+                            <div class="cardtext">
+                                <h3>Les délices des sens</h3>
+                                <h4>Folie-Méricourt</h4>
+                            </div>
+                            <div class="coeur">
+                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;"
+                                    stroke="null">
+                                    <defs style="vector-effect: non-scaling-stroke;" stroke="null">
+                                        <linearGradient spreadMethod="pad" y2="0.15625" x2="0.70703" y1="0.96484" x1="0.03906" id="gradbox_fill">
+                                            <stop stop-opacity="0.99219" offset="0" stop-color="#d85fb6" />
+                                            <stop offset="1" stop-opacity="0.99609" stop-color="#55337f" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g stroke="null">
+                                        <title stroke="null">Layer 1</title>
+                                        <path stroke="#000000" id="svg_1"
+                                            d="m17.65923,10.36524c6.56521,-18.0581 32.28792,0 0,23.21756c-32.28792,-23.21756 -6.56521,-41.27566 0,-23.21756z"
+                                            fill="url(#gradbox_fill)" />
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </a>
