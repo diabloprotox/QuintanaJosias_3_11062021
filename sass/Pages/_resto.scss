@@ -1,0 +1,67 @@
+.imgtop{
+    img{
+        object-fit: cover;
+        height: 350px;
+        width: 100%;
+    }
+    position: absolute;
+    z-index: -1;
+}
+.menu{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: $back-gris;
+    margin-top: 310px;
+    h1{
+        font-family: 'Shrikhand',cursive;
+        font-weight: 400;
+    }
+    h2{
+        margin: 15px;
+        padding-bottom: 5px;
+        font-weight: 100;
+        font-size: larger;
+        border-bottom: 3px solid $color-tertiaire;
+        width: 48px;
+    }
+    &_carte{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &_titre{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    &_text{
+        background-color: white;
+        border-radius: 20px;
+        margin: 15px;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 350px;
+        grid-template-areas: 
+                    "plat plat"
+                    "info prix";
+        h3{
+            grid-area: plat;
+            margin: 5px;
+            font-weight: 600;
+        }
+        h4{
+            grid-area: info;
+            margin: 5px;
+            font-weight: 100;
+        }
+        span{
+            grid-area: prix;
+            text-align: right;
+        }
+    }
+}
+.commander{
+    text-align: center;
+}

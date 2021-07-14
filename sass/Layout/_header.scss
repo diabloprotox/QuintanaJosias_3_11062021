@@ -1,12 +1,15 @@
 header{
-    margin-top: 25px;
+    padding-top: 25px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    
+    nav{
+        display: flex;
+        i{
+            position: absolute;
+            left: 20px;
+            font-size: 25px;
+            color: black;
+        }        
+    }    
 }
-nav{
-    i{
-        position: relative;  
-    }
-    }
