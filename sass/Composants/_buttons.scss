@@ -1,22 +1,20 @@
 .btn{
     border: 1px solid transparent;
     cursor: pointer;
-    &_explorer{
-        width: 240px;
-        margin-bottom: 50px;        
-        border-radius: 30px;
-        background-color: $color-secondary;
-        background: radial-gradient(circle, rgba(255,121,218,1) 0%, rgba(193,86,163,1) 100%);
-        padding: 15px;
-        color: white;
-        font-size: large;
-        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.15);
-        &:hover{
-            opacity: 0.9;
-            box-shadow:  3px 5px 5px 0px rgba(0, 0, 0, 0.30);
-        }
+    width: 240px;
+    margin-bottom: 50px;        
+    border-radius: 30px;
+    background-color: $color-secondary;
+    background: radial-gradient(circle, rgba(255,121,218,1) 0%, rgba(193,86,163,1) 100%);
+    padding: 15px;
+    color: white;
+    font-size: large;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    &:hover{
+        opacity: 0.8;
+        box-shadow:  3px 5px 5px 0px rgba(0, 0, 0, 0.30);
     }
-    &_fonction{
+    &--fonction{
         background-color: $back-gris;
         padding: 20px 20px 20px 10px;
         margin: 10px;
@@ -25,7 +23,9 @@
         font-weight: 600;
         width: 320px;
         text-align: left;
-        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.10);     
+        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.10);   
+        background: none;
+        color: black; 
         
         span{
             padding: 5px 10px;
