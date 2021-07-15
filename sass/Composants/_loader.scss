@@ -1,0 +1,14 @@
+.spinner{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar{
+        background-color: $color-primary;
+        height: 100%;
+        width: 20px;
+        animation: bars 1600ms backwards infinite;
+        animation-direction: alternate;
+        @include delayloader
+    }
+}

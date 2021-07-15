@@ -28,6 +28,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        
     }
     &_titre{
         display: flex;
@@ -36,6 +37,7 @@
         padding: 20px;
     }
     &_text{
+        animation: menu 1500ms backwards;
         background-color: white;
         border-radius: 20px;
         margin: 15px;
@@ -43,6 +45,9 @@
         display: grid;
         grid-template-rows: 30px;
         grid-template-columns: 350px;
+        @media only screen and (max-width : 750px){
+            grid-template-columns: 290px;
+        }
         grid-template-areas: 
                     "plat plat"
                     "info prix";
@@ -60,6 +65,7 @@
             grid-area: prix;
             text-align: right;
         }
+        @include delaymenu
     }
 }
 .commander{

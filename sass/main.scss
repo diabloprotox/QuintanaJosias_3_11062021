@@ -1,9 +1,11 @@
 @import "./Utils/variables";
+@import "./Utils/keyframes";
 @import "./Utils/mixins";
 @import "./Base/main";
 @import "./Composants/buttons";
 @import "./Composants/card";
 @import "./Composants/coeur";
+@import "./Composants/loader";
 @import "./Layout/header";
 @import "./Layout/footer";
 @import "./Pages/home";

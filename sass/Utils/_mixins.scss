@@ -1,0 +1,14 @@
+@mixin delaymenu {
+    @for $i from 1 through 4{
+            &--#{$i} {
+                animation-delay: 300ms * $i;
+            }
+        }
+}
+@mixin delayloader {
+    @for $i from 1 through 8 {
+            &--#{$i} {
+                animation-delay: 200ms * $i;
+            }
+        }
+}
