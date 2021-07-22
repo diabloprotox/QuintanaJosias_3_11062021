@@ -416,7 +416,7 @@ header nav i {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: large;
+  font-size: 16px;
 }
 .menu_text .menu_description {
   display: flex;
