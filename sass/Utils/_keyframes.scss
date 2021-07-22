@@ -3,7 +3,7 @@
         fill: transparent;        
     }
     100% {
-        fill: $color-primary;
+        fill:$color-secondary;
     }    
 }
 @keyframes bars {
@@ -18,8 +18,47 @@
 @keyframes menu {
     0%{
         opacity: 0;
+        margin-left: 100px;
     }
     100%{
         opacity: 1;
+        margin-left: 15px;//////
     }
+}
+
+@keyframes loader {
+    0%{
+        overflow: hidden;
+    }
+    99%{
+        overflow: hidden;
+    }
+    100%{
+        overflow: auto;
+    }
+}
+@keyframes loadere{
+    0%{
+        opacity: 1;
+        z-index: 99;
+    }
+    99%{
+        opacity: 1;
+        z-index: 99;
+    }
+    100%{
+        opacity: 0;
+        z-index: -99;
+    }
+    
+}
+
+@keyframes menurotation {
+    0%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
 }

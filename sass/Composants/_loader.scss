@@ -4,10 +4,10 @@
     display: flex;
     justify-content: space-evenly;
     &__bar{
-        background-color: $color-primary;
+        background: linear-gradient($color-primary,$color-secondary);
         height: 100%;
         width: 20px;
-        animation: bars 1600ms backwards infinite;
+        animation: bars 1000ms backwards infinite;
         animation-direction: alternate;
         @include delayloader
     }

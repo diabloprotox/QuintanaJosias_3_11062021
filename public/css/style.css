@@ -4,7 +4,7 @@
     fill: transparent;
   }
   100% {
-    fill: #9356DC;
+    fill: #FF79DA;
   }
 }
 @keyframes bars {
@@ -18,9 +18,44 @@
 @keyframes menu {
   0% {
     opacity: 0;
+    margin-left: 100px;
   }
   100% {
     opacity: 1;
+    margin-left: 15px;
+  }
+}
+@keyframes loader {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
+@keyframes loadere {
+  0% {
+    opacity: 1;
+    z-index: 99;
+  }
+  99% {
+    opacity: 1;
+    z-index: 99;
+  }
+  100% {
+    opacity: 0;
+    z-index: -99;
+  }
+}
+@keyframes menurotation {
+  0% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 * {
@@ -163,35 +198,35 @@ body {
   justify-content: space-evenly;
 }
 .spinner__bar {
-  background-color: #9356DC;
+  background: linear-gradient(#9356DC, #FF79DA);
   height: 100%;
   width: 20px;
-  animation: bars 1600ms backwards infinite;
+  animation: bars 1000ms backwards infinite;
   animation-direction: alternate;
 }
 .spinner__bar--1 {
-  animation-delay: 200ms;
+  animation-delay: 100ms;
 }
 .spinner__bar--2 {
-  animation-delay: 400ms;
+  animation-delay: 200ms;
 }
 .spinner__bar--3 {
-  animation-delay: 600ms;
+  animation-delay: 300ms;
 }
 .spinner__bar--4 {
-  animation-delay: 800ms;
+  animation-delay: 400ms;
 }
 .spinner__bar--5 {
-  animation-delay: 1000ms;
+  animation-delay: 500ms;
 }
 .spinner__bar--6 {
-  animation-delay: 1200ms;
+  animation-delay: 600ms;
 }
 .spinner__bar--7 {
-  animation-delay: 1400ms;
+  animation-delay: 700ms;
 }
 .spinner__bar--8 {
-  animation-delay: 1600ms;
+  animation-delay: 800ms;
 }
 
 header {
@@ -302,6 +337,24 @@ header nav i {
   padding: 20px;
 }
 
+body {
+  animation: loader 2s;
+  animation-delay: 350ms;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loadere 2s forwards;
+  animation-delay: 350ms;
+}
+
 /*.spinner{
     display: inline-block;
     width: 200px;
@@ -389,30 +442,70 @@ header nav i {
   background-color: white;
   border-radius: 20px;
   margin: 15px;
-  padding: 10px;
-  display: grid;
-  grid-template-rows: 30px;
-  grid-template-columns: 350px;
-  grid-template-areas: "plat plat" "info prix";
-}
-@media only screen and (max-width: 750px) {
-  .menu_text {
-    grid-template-columns: 290px;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
 }
 .menu_text h3 {
-  grid-area: plat;
-  margin: 5px;
-  font-weight: 600;
+  margin: 0;
+  padding: 10px 0 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: large;
 }
-.menu_text h4 {
-  grid-area: info;
+.menu_text .menu_description {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_text .menu_description h4 {
   margin: 5px;
   font-weight: 100;
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu_text span {
-  grid-area: prix;
-  text-align: right;
+.menu_text .menu_description span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  transition: 400ms ease-in;
+  font-weight: bold;
+}
+.menu_text .menu_description .check {
+  background-color: #99E2D0;
+  position: absolute;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 20px;
+  right: 0;
+  top: 0;
+  transition: all 500ms ease-in-out;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+.menu_text .menu_description .check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 82px;
+  width: 70px;
+  font-size: 25px;
+}
+.menu_text:hover .menu_description .check {
+  transform: scaleX(1);
+}
+.menu_text:hover .menu_description i {
+  animation: menurotation 1s ease-in-out backwards;
+}
+.menu_text:hover .menu_description span {
+  margin-right: 60px;
 }
 .menu_text--1 {
   animation-delay: 300ms;

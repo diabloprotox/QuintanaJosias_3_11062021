@@ -41,33 +41,71 @@
         background-color: white;
         border-radius: 20px;
         margin: 15px;
-        padding: 10px;
-        display: grid;
-        grid-template-rows: 30px;
-        grid-template-columns: 350px;
-        @media only screen and (max-width : 750px){
-            grid-template-columns: 290px;
-        }
-        grid-template-areas: 
-                    "plat plat"
-                    "info prix";
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        @include ellipsis;
+        position: relative;
+        //font-size: medium;
         h3{
-            grid-area: plat;
-            margin: 5px;
-            font-weight: 600;
+            margin: 0;
+            padding: 10px 0 0 15px;
+            @include ellipsis;
+            font-size: large;
         }
-        h4{
-            grid-area: info;
-            margin: 5px;
-            font-weight: 100;
+        .menu_description{
+            display: flex;
+            justify-content: space-between;
+            h4{
+                margin: 5px;
+                font-weight: 100;
+                padding: 10px;
+                @include ellipsis;
+            }
+            span{
+                @include flex-center;
+                padding-right: 15px;
+                transition: 400ms ease-in;
+                font-weight: bold;
+            }
+            .check{
+                background-color: $color-tertiaire;
+                position: absolute;
+                border-top-right-radius: 18px;
+                border-bottom-right-radius: 20px;
+                right: 0;
+                top: 0;
+                transition: all 500ms ease-in-out;
+                transform-origin: right;
+                transform: scaleX(0);
+                i{
+                    @include flex-center;
+                    color: white;
+                    height: 82px;
+                    width: 70px;
+                    font-size: 25px;
+                }
+            }
         }
-        span{
-            grid-area: prix;
-            text-align: right;
-        }
+        &:hover{
+            
+            
+            .menu_description{
+                .check{
+                    transform: scaleX(1);
+                }
+                i{
+                    animation: menurotation 1s ease-in-out backwards;
+                }
+                span{
+                    margin-right: 60px;
+                }
+            }
+        }        
         @include delaymenu
     }
 }
+
 .commander{
     text-align: center;
 }

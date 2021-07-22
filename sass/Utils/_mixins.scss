@@ -8,7 +8,19 @@
 @mixin delayloader {
     @for $i from 1 through 8 {
             &--#{$i} {
-                animation-delay: 200ms * $i;
+                animation-delay: 100ms * $i;
             }
         }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

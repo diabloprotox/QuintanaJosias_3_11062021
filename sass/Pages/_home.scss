@@ -49,6 +49,23 @@
     background-color: $back-gris;
     padding: 20px;
 }
+body{
+    animation: loader 2s;
+    animation-delay: 350ms;
+}
+
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: grey, $alpha: 0.5);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loadere 2s forwards;
+    animation-delay: 350ms;
+}
 
 ////////////////////////
 ////////SPINNER/////////
