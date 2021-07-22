@@ -35,6 +35,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 20px;
+        @media only screen and (max-width : 750px){
+            h1{
+                font-size: 25px;
+            }
+        }
     }
     &_text{
         animation: menu 1500ms backwards;
@@ -46,7 +51,6 @@
         width: 350px;
         @include ellipsis;
         position: relative;
-        //font-size: medium;
         h3{
             margin: 0;
             padding: 10px 0 0 15px;
@@ -88,8 +92,9 @@
             }
         }
         &:hover{
-            
-            
+            .check{
+                    transform: scaleX(1);
+                }            
             .menu_description{
                 .check{
                     transform: scaleX(1);
@@ -101,9 +106,28 @@
                     margin-right: 60px;
                 }
             }
+        }
+        .check{
+                background-color: $color-tertiaire;
+                position: absolute;
+                border-top-right-radius: 18px;
+                border-bottom-right-radius: 20px;
+                right: 0;
+                top: 0;
+                transition: all 500ms ease-in-out;
+                transform-origin: right;
+                transform: scaleX(0);
+                i{
+                    @include flex-center;
+                    color: white;
+                    height: 82px;
+                    width: 70px;
+                    font-size: 25px;
+                }
+            }
+            @include delaymenu
         }        
-        @include delaymenu
-    }
+
 }
 
 .commander{
