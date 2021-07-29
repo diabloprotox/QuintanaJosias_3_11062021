@@ -266,6 +266,7 @@ header nav i {
 #footer ul li {
   list-style: none;
   padding: 5px;
+  cursor: pointer;
 }
 #footer ul li i {
   padding-right: 10px;
